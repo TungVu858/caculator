@@ -15,6 +15,9 @@
             <td colspan="4"><input type="text" id="ketqua"></td>
         </tr>
         <tr>
+            <td colspan="4"><input id="ketqua1"></td>
+        </tr>
+        <tr>
             <td><button onclick="nhap('1')">1</button></td>
             <td><button onclick="nhap('2')">2</button></td>
             <td><button onclick="nhap('3')">3</button></td>
@@ -41,12 +44,17 @@
     </table>
     <script>
         let ketqua = document.getElementById('ketqua');
+        let ketqua1 = document.getElementById('ketqua1');
         function nhap(kt){
             ketqua.value = ketqua.value + kt;
         }
         function tinhtoan() {
-            ketqua.value = eval(ketqua.value);
+            ketqua1.value = eval(ketqua.value);
 
+        }
+        function rs(){
+            ketqua.value = "";
+            ketqua1.value = "";
         }
 
     </script>
